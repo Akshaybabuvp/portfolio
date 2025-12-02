@@ -1,39 +1,34 @@
 import { motion } from 'framer-motion';
-import recipeImg from '../images/projectT.png';
+import projectImg from '../images/projectT.png';
 
 const ProjectsTwo = () => {
   return (
-    <div className="pb-7 px-6 md:px-16 bg-[#0a0a0a]">
+    <div className="py-10 px-6 md:px-16 bg-[#0a0a0a]">
       {/* Project Card */}
       <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
+        initial={{ opacity: 0, x: -80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
+        viewport={{ once: true, amount: 0.3 }}
         className="bg-[#111] p-6 rounded-2xl shadow-xl flex flex-col md:flex-row items-center gap-10 hover:shadow-2xl transition"
       >
-        {/* 🔥 IMAGE ANIMATION (LEFT SLIDE) */}
+        {/* Left Section - Image */}
         <motion.div
           initial={{ opacity: 0, x: -80 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8 }}
           viewport={{ once: true, amount: 0.3 }}
-          className="
-            rounded-xl overflow-hidden 
-            w-full 
-            max-w-[500px] 
-            aspect-video
-            shadow-lg flex justify-center
-          "
+          whileHover={{ scale: 1.03 }}
+          className="rounded-xl overflow-hidden w-full max-w-[500px] aspect-video shadow-lg flex justify-center"
         >
           <img
-            src={recipeImg}
+            src={projectImg}
             alt="E-Commerce App"
             className="w-full h-full object-cover"
           />
         </motion.div>
 
-        {/* 🔥 TEXT ANIMATION (RIGHT SLIDE) */}
+        {/* Right Section - Text */}
         <motion.div
           initial={{ opacity: 0, x: 80 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -66,9 +61,9 @@ const ProjectsTwo = () => {
 
           <p className="text-gray-300 font-serif">
             This is my ongoing freelance e-commerce project, currently under
-            active development. New features such as product listings, user
-            authentication, cart system, and secure checkout are being added.
-            The project continues to evolve with new improvements weekly.
+            active development. Features like product listings, authentication,
+            cart system, and checkout are being added. This project evolves
+            weekly with new improvements.
           </p>
 
           <div>
