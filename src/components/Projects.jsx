@@ -3,7 +3,7 @@ import projectImg from '../images/image.png';
 
 const Projects = () => {
   return (
-    <div className="py-10 px-6 md:px-16 bg-[#0a0a0a]">
+    <div id="Projects" className="py-10 px-6 md:px-16 bg-[#0a0a0a]">
       {/* Project Card */}
       <motion.div
         initial={{ opacity: 0, x: -80 }}
