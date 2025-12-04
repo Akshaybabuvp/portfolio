@@ -33,7 +33,7 @@ const Home = () => {
             </button>
           </a>
 
-          <a href="/resume.pdf" target="_blank">
+          <a href="/Akshay_Latest_cv.pdf" target="_blank">
             <button className="px-6 py-3 rounded-xl border border-gray-400 hover:bg-gray-800 transition duration-200 cursor-pointer">
               My Resume
             </button>
